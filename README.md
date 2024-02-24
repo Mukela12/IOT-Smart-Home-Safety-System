@@ -49,3 +49,43 @@ motor positions, and implements these commands in real-time.
 ![image](https://github.com/Mukela12/IOT-Smart-Home-Safety-System/assets/65640620/36c08a4e-fce6-4347-a594-cfe2ab42e0a5)
 
 
+# Blynk App Functionality
+
+The Blynk app serves as the primary interface for user interaction and monitoring, 
+offering two key functionalities:
+
+![image](https://github.com/Mukela12/IOT-Smart-Home-Safety-System/assets/65640620/ce1b5915-b1ef-44ef-9fc5-f3f13b0995fd)
+
+1. Monitoring: It displays real-time data from the DHT11 and MQ-9 sensors. The 
+app presents a visual representation of the current environmental conditions, 
+including temperature, humidity, and gas levels.
+
+2. Control: Through the app, users can remotely control the system. This includes 
+adjusting the positions of the windows via sliders. The position of these sliders 
+corresponds to the angle of the servo motors, allowing users to regulate 
+ventilation based on the sensor readings.
+
+![image](https://github.com/Mukela12/IOT-Smart-Home-Safety-System/assets/65640620/ab878818-7b6f-466f-aad3-1c4e58b2be87)
+
+
+## Implementation
+
+
+# 1. Client-Side Circuit Assembly
+
+The initial step involves connecting components to the client ESP8266. This setup 
+enables the microcontroller to control various actuators based on sensor data, activating 
+the buzzer, illuminating LEDs, and operating the servo motors for window 
+manipulation.
+
+![image](https://github.com/Mukela12/IOT-Smart-Home-Safety-System/assets/65640620/a74993df-d48c-4c78-9554-94135b5278ae)
+
+
+# 2. Server-Side Circuit Configuration
+
+The second step entails assembling the server side circuit by connecting the second 
+ESP8266 with the LCD display. This configuration allows the server ESP8266 to 
+display temperature and humidity readings received from the client, ensuring local, 
+real-time data visualization.
+
+![image](https://github.com/Mukela12/IOT-Smart-Home-Safety-System/assets/65640620/1f89fc1a-259c-41a8-bb96-481a825b40e7)
