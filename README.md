@@ -13,11 +13,28 @@ intuitive visual feedback, indicating safe or hazardous conditions. Remote monit
 and control are facilitated through the Blynk mobile and web application, enhancing 
 user engagement and system responsiveness.
 
-The project tackles the limitations of traditional home safety systems by providing a 
-more interactive and immediate response to environmental dangers. The 
-implementation of the project involved careful planning and execution, including 
-circuit assembly for both client and server components, programming of the ESP8266 
-microcontrollers, and integration with the Blynk platform for enhanced user 
-interaction. The report details the project's design, implementation, and 
-functionalities, highlighting its potential to transform home safety measures through 
-technology.
+
+## Data Flow and Processing
+
+# The system's operation involves the following steps:
+
+1. Sensor Data Acquisition and Processing:
+• The client ESP8266 reads data from the DHT11 and MQ-9 sensors, assessing 
+environmental conditions.
+• It processes this data to determine if there are any conditions (like high 
+temperature or gas levels) that require immediate action.
+2. Actuator Control:
+• Based on the sensor data, the client ESP8266 controls various actuators. This 
+includes activating the buzzer, lighting LEDs, and adjusting the servo motors 
+to open or close windows.
+3. Client-to-Server Communication:
+• The client ESP8266 sends the processed sensor data to the server ESP8266.
+• The server ESP8266 updates the LCD display with the latest temperature and 
+humidity readings, providing a local, real-time data visualization.
+4. Client-to-Blynk App Communication:
+• The client ESP8266 communicates directly with the Blynk app, sending 
+sensor data for remote visualization.
+• It also receives user commands from the app, such as adjustments to the servo 
+motor positions, and implements these commands in real-time.
+
+
