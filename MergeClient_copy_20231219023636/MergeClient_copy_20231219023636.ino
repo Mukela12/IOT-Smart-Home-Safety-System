@@ -11,10 +11,10 @@
 
 char auth[] = "QhMYiNchIfx2YurBZoWV8xz9613jEgMQ";
 
-char ssid[] = "Aziz_&_Farioula_Welcome_U@unifi";  
-char pass[] = "Vmat6428";
+char ssid[] = "wifi name";  
+char pass[] = "wifi password";
 
-const char * host = "192.168.0.25";        // IP Server
+const char * host = "Server IP Address";        // IP Server
 
 const int httpPort = 80;
 
