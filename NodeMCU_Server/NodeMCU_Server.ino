@@ -6,9 +6,9 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 float temperature = 0.0;
 float humidity = 0.0;
 
-const char* ssid = "Aziz_&_Farioula_Welcome_U@unifi";
-const char* password = "Vmat6428";
-const char* host = "192.168.0.26";
+const char* ssid = "wifi name";
+const char* password = "wifi password";
+const char* host = "Client IP Address";
 WiFiServer server(80);
 
 void setup() {
